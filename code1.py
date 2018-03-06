@@ -15,12 +15,12 @@ mC.run_forever(speed_sp=100)
 
 while not btn.any():
   if cl.value()<30:
-    mB.stop(stop_action='break')
-    mC.stop(stop_action='break')
+    mB.stop(stop_action='brake')
+    mC.stop(stop_action='brake')
     
   else:
-    mB.stop(stop_action='break')
-    mC.stop(stop_action='break')
+    mB.stop(stop_action='brake')
+    mC.stop(stop_action='brake')
     
 # mB.stop(stop_action='break')
 # mC.stop(stop_action='break')
