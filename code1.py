@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!/usr/bin/env python3
 from ev3dev.ev3 import*
 
 btn = Button()
