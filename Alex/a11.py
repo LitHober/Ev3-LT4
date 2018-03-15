@@ -29,5 +29,5 @@ def funcion1():
     sleep(5)
 
 hilo = Thread(target = funcion1)
-hilo = start()
+hilo.start()
 #def funcion2():
