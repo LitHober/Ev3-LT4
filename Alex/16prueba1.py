@@ -20,13 +20,12 @@ distance = infra_s.value()
 
 #funciones
 def funcion1():
-    mB.run_forever(speed_sp = 900)
-    mC.run_forever(speed_sp = 900)
+    mB.run_forever(speed_sp = 400)
+    mC.run_forever(speed_sp = 400)
     time.sleep(5)
     mB.stop(stop_action = "hold")
     mC.stop(stop_action = "hold")
     time.sleep(5)
-    Sound.beep()
 
 def funcion2():
     for i in range(5):
