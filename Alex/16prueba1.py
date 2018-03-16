@@ -8,9 +8,6 @@ import time
 infra_s = InfraredSensor()
 color_s = ColorSensor()
 
-#motor_B = LargeMotor('outB')
-#motor_C = LargeMotor('outC')
-
 #modes
 infra_s.mode = 'IR-PROX'
 color_s.mode = 'COL-COLOR'
@@ -20,14 +17,22 @@ distance = infra_s.value()
 
 #funciones
 def funcion1():
-    #mB = LargeMotor('outB')
-    #mC = LargeMotor('outC')
-    #mB.run_forever(speed = 900)
-    #time.sleep(5)
-    #mC.stop(stop_action = "hold")
-    #time.sleep(5)
+    mB = LargeMotor('outB')
+    mC = LargeMotor('outC')
+    mB.run_forever(speed_sp = 900)
+    time.sleep(5)
+    mC.stop(stop_action = "hold")
+    time.sleep(5)
     Sound.beep()
 
-hilo = threading.Thread( name = 'funcion1', target = funcion1)
+def funcion2():
+    for i in range(5):
+        Sound.beep()
+    
 
-hilo.start()
+hilo1 = threading.Thread( name = 'funcion1', target = funcion1)
+hilo2 = threading.Thread( name = 'funcion2', target = funcion2)
+
+hilo1.start()
+hilo2.start()
+
