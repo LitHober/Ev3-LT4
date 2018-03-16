@@ -20,13 +20,13 @@ distance = infra_s.value()
 
 #funciones
 def funcion1():
-    mB = LargeMotor('outB')
-    mC = LargeMotor('outC')
-
-    mB.run_forever(speed = 900)
-    time.sleep(5)
-    mC.stop(stop_action = "hold")
-    time.sleep(5)
+    #mB = LargeMotor('outB')
+    #mC = LargeMotor('outC')
+    #mB.run_forever(speed = 900)
+    #time.sleep(5)
+    #mC.stop(stop_action = "hold")
+    #time.sleep(5)
+    Sound.beep()
 
 hilo = threading.Thread( name = 'funcion1', target = funcion1)
 
