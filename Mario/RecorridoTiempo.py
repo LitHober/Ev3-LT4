@@ -22,6 +22,7 @@ while not btn.any():    #Se sale del loop cuando presionas cualquier boton
 			direccion = 1
 		else:
 			direccion = 0
+			
 	elif direccion == 1: 
       		mB.run_timed(time_sp=3000, speed_sp=500)
 		mC.run_timed(time_sp=3000, speed_sp=500)
@@ -31,5 +32,6 @@ while not btn.any():    #Se sale del loop cuando presionas cualquier boton
 			direccion = 1
 		else:
 			direccion = 0
+			
 mB.stop(stop_action='brake')
 mC.stop(stop_action='brake')
