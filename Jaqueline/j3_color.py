@@ -13,12 +13,12 @@ assert cl.connected, "Connect a color sensor to any sensor port"
 cl.mode = 'COL-COLOR'
 
 def funcion1():
-mB = LargeMotor('outB')
-mC = LargeMotor('outC')
-mB.run_forever(speed_sp=150)
-mC.run_forever(speed_sp=150)
-count = 0 #Contador de basura
-vuelta = 0 # 0=derecha; 1=izquierda
+	mB = LargeMotor('outB')
+	mC = LargeMotor('outC')
+	mB.run_forever(speed_sp=150)
+	mC.run_forever(speed_sp=150)
+	count = 0 #Contador de basura
+	vuelta = 0 # 0=derecha; 1=izquierda
 
 while not btn.any():
 	if cl.value() == 1:
