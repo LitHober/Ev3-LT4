@@ -20,15 +20,15 @@ def funcion1():
 	count = 0 #Contador de basura
 	vuelta = 0 # 0=derecha; 1=izquierda
 
-while not btn.any():
-	if cl.value() == 1:
-		Sound.speak('black')
-		mB.stop()
-		mC.stop()
-		sleep(3)
-		count += 1 #Agrega al contador una basura
-		mB.run_forever(speed_sp=400)
-		mC.run_forever(speed_sp=400)
+	while not btn.any():
+		if cl.value() == 1:
+			Sound.speak('black')
+			mB.stop()
+			mC.stop()
+			sleep(3)
+			count += 1 #Agrega al contador una basura
+			mB.run_forever(speed_sp=400)
+			mC.run_forever(speed_sp=400)
 
 hilo1 = threading.Thread( name = 'funcion1', target = funcion1)
 
