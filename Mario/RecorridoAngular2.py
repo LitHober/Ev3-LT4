@@ -140,8 +140,8 @@ while not btn.any():
 		mB.stop()
 		mC.stop()
 		while count != 0:
-			count -= 1 #Deposita una basura
 			Sound.beep()
+			count -= 1 #Deposita una basura
 		sleep(3)
 	else:
 		mB.run_forever(speed_sp=400)
