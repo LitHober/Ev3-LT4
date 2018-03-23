@@ -162,10 +162,10 @@ def red():
 		mC.run_forever(speed_sp=400)
 ###########################################################################################
 #Asignación del hilo
-hilo_black = threading.Thread(name 'black', target = black)
-hilo_brown = threading.Thread(name 'brown', target = brown)
-hilo_blue = threading.Thread(name 'blue', target = blue)
-hilo_red = threading.Thread(name 'red', target = red)
+hilo_black = threading.Thread(name = 'black', target = black)
+hilo_brown = threading.Thread(name = 'brown', target = brown)
+hilo_blue = threading.Thread(name = 'blue', target = blue)
+hilo_red = threading.Thread(name = 'red', target = red)
 
 ###########################################################################################
 #Correr hilos
