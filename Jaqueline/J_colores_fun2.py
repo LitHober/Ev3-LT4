@@ -11,12 +11,12 @@ btn = Button()#Boton para que se detenga el programa
 cl = ColorSensor()
 assert cl.connected, "Connect a color sensor to any sensor port"
 cl.mode = 'COL-COLOR'
-mB = LargeMotor('outB')
-mC = LargeMotor('outC')
-count = 0 #Contador de basura
-vuelta = 0 # 0=derecha; 1=izquierda
 
 def colores():
+	mB = LargeMotor('outB')
+	mC = LargeMotor('outC')
+	count = 0 #Contador de basura
+	vuelta = 0 # 0=derecha; 1=izquierda
 	mB.run_forever(speed_sp=150)
 	mC.run_forever(speed_sp=150)
 	
@@ -116,7 +116,11 @@ def colores():
 
 
 def contenedor():
-			
+	mB = LargeMotor('outB')
+	mC = LargeMotor('outC')
+	count = 0 #Contador de basura
+	vuelta = 0 # 0=derecha; 1=izquierda
+
 	elif cl.value() == 5:
 	Sound.speak('red is a container')
 	mB.stop()
