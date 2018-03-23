@@ -8,18 +8,26 @@ import threading
 btn = Button()
 infra = InfraredSensor()
 color = ColorSensor()
+'''
 mB = LargeMotor('outB')
 mC = LargeMotor('outC')
+'''
 
 color.mode = 'COL-COLOR'
 infra.mode = 'IR-PROX'
 
 distance = infra.value()
 color_value = color.value()
+'''
 count = 0
 vuelta = 0
+'''
 
 def Go():
+    mB = LargeMotor('outB')
+    mC = LargeMotor('outC')
+    count = 0
+    vuelta = 0
     mB.run_forever(speed_sp=150)
     mC.run_forever(speed_sp=150)
 
