@@ -115,21 +115,21 @@ def colores():
 					mC.run_forever(speed_sp=400)
 
 
-		def contenedor():
+def contenedor():
 			
-				elif cl.value() == 5:
-				Sound.speak('red is a container')
-				mB.stop()
-				mC.stop()
-				while count != 0:
-					Sound.beep()
-					count -= 1 #Deposita una basura
-				sleep(3)
-				mB.run_forever(speed_sp=400)
-				mC.run_forever(speed_sp=400)
+	elif cl.value() == 5:
+	Sound.speak('red is a container')
+	mB.stop()
+	mC.stop()
+	while count != 0:
+		Sound.beep()
+		count -= 1 #Deposita una basura
+	sleep(3)
+	mB.run_forever(speed_sp=400)
+	mC.run_forever(speed_sp=400)
 
-		mB.stop(stop_action='brake')
-		mC.stop(stop_action='brake')
+mB.stop(stop_action='brake')
+mC.stop(stop_action='brake')
 
 hilo1 = threading.Thread( name = 'colores', target = colores)
 hilo2 = threading.Thread( name = 'contenedor', target = contenedor)
