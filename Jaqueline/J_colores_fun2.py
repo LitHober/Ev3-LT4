@@ -121,7 +121,7 @@ def contenedor():
 	count = 0 #Contador de basura
 	vuelta = 0 # 0=derecha; 1=izquierda
 
-	cl.value() == 5:
+	if cl.value() == 5:
 	Sound.speak('red is a container')
 	mB.stop()
 	mC.stop()
